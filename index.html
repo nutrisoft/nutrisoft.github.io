@@ -12,9 +12,12 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="/public_html/css/main.css">
         <link rel="stylesheet" href="css/main.css" type="text/css"/>
         <link rel="stylesheet" href="css/main.css" type="text/css">
- <script>
-           ('a:not([href^="https://nutrisoft.github.io/"]):not(href^="#"]):not(href^="/"])').addClass('external');
+        <script>
+            $('a').filter(function(){
+                return this.hostname && this.hostname !== location.hostname;
+            }).addClass("external");
         </script>
+
 
     </head>
     <body>
@@ -22,8 +25,7 @@ and open the template in the editor.
             <img src="images/nutrisoftgitblog.png" alt="car" class="logo" />
         </div>
         <div id="container1">
-            
-            </div>
+           
             <div class="content">
                 <div class="blogpost">
                     <div class="milo-review"><h2><a href="index.html#milo-review">Product Review : Milo </a></h2></div>
@@ -47,20 +49,22 @@ According to Nestle, Milo offers nutritional benefits like :</p>
 
 <p>As a nutritionist, I can say nestle claims are valid looking at the ingredients vividly.
 Folks why not try this healthy drink that keeps me refresh anytime I feel like taking a beverage.
-Comment by tweeting me on <a href="www.twitter.com/michaelin007" target="_blank">Twitter</a> </p>
+Comment by tweeting me on <a href="www.twitter.com/michaelin007">Twitter</a> </p>
                         
                         
                     </div>
                     
                 </div>
             </div>
-            <div class="leftsidebar">
+         <div class="leftsidebar">
                 <div id="lefcon">
                     <label>Recent Posts</label><br/>
                     <label><a href="index.html#milo-review">Product Review : Milo </a></label>
                     
                 </div>
+            </div>   
         </div>
+         
         <div id="container2">
                     <div class="footer1"><div class="about">
                 
