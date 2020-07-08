@@ -1,43 +1,90 @@
-body {
-    margin: 60px auto;
-    width: 70%;
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 8, 2020, 11:05:45 AM
+    Author     : michael
+*/
+body{
+     background-color:white;
+    background-size: 100%;
+    
+    margin: 5px;
+    font-size: 14px;
+    font-family: Verdana, "Verdana CE",  Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
 }
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+#nav{
+    display: flex;
+    background-color:#99ffff;
+    height: 50px;
 }
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+@media(min-width:768px){
+#container1{
+    display:flex;
+    height: 100vh;
+    
+    
+    
 }
-a {
-    text-decoration: none;
-    color: #999;
+#container2{
+    display: flex;
+     background-color:#99ffff;
+     height:70px;
 }
-a:hover {
-    text-decoration: underline;
 }
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+#container1,#container2 {
+    border: 0.5px #ccc solid;
+    padding:10px;
 }
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+.leftsidebar{
+    flex:0 0 20%;
+    order:1;
+     border: 0.5px #ccc solid;
+     text-align: center;
+     align-items: center;
+     
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+.content{
+    flex:0 0 80%;
+    order:2;
+     border: 0.5px #ccc solid;
+        
+}
+.footer1{
+    flex:0 0 50%;
+    order:1;
+     border: 0.5px #ccc solid;
+}
+.footer2{
+    flex:0 0 50%;
+    order:2;
+     border: 0.5px #ccc solid;
+        
+}.blogpost {
+
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.btitle {
+
 }
 
-ul.posts li {
-    list-style: none;
+.bimage {
+
+}
+
+.bcontent {
+
+}
+
+.about {
+
+}
+
+.contact {
+
+}
+.lefcon{
+    text-align: center;
 }
