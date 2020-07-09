@@ -38,7 +38,7 @@ body{
 #container2{
     display: flex;
     background-color:#333333;
-     height:70px;
+     height:100%;
 }
 }
 #container1,#container2 {
